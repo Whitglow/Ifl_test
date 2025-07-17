@@ -8,7 +8,7 @@ def clock_angle(hours, minutes):
     # Находим минимальный угол
     return min(angle, 360 - angle)
 
-h = int(input("Введите часы (0-23): ")) % 12
+h = int(input("Введите часы (0-23): "))
 m = int(input("Введите минуты (0-59): "))
 
 print(f"Угол между стрелками: {clock_angle(h, m)}°")
